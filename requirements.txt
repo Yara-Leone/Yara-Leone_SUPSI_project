@@ -1,0 +1,19 @@
+# Core scientific stack
+numpy
+pandas
+matplotlib
+
+# Geospatial
+geopandas
+shapely
+rasterio
+pyproj
+fiona
+
+# Data access / APIs
+requests
+earthengine-api
+geemap
+
+# Excel I/O
+openpyxl
