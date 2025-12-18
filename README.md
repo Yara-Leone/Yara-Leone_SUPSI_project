@@ -1,7 +1,7 @@
 # "Yara-Leone_SUPSI_project" 
-# CIPAIS Remote Sensing Workflows
+# Remote Sensing Workflows
 
-This repository contains Python scripts developed for the CIPAIS project,
+This repository contains Python scripts developed for the Project of internship for the supplementary geomatics certificate,
 focusing on remote sensing analysis of:
 
 - Land and Lake Surface Temperature (LST)
@@ -29,23 +29,23 @@ File  :   [inputs]    [outputs]
 All required input datasets are provided as a compressed archive (`inputs.zip`) located in the `inputs/` directory.
 Before running the scripts, the archive must be extracted so that the original directory structure is preserved.
 
-## Structure (CIPAIS project)
+## Structure 
+### (CIPAIS project)
+- `1_1_landsat_GEEforCIPAIS.py/`
+Landsat thermal products are retrieved via STAC and processed to derive land surface temperature using the Barsi atmospheric correction
 
-- `sentinel3/`
-  - STAC inventory & download (OLCI L1 EFR)
-  - Chl-a processing (C2RCC, SIMILE protocol)
-  - Validation against reference maps
+- `2_1_download_OLCI1EFR.py/` & `2_2_processing_OLCI1EFR.py`
+Sentinel-3 OLCI Level-1 EFR products are retrieved via STAC and processed for chlorophyll-a using the C2RCC algorithm following the SIMILE protocol
 
-- `landsat/`
-  - STAC inventory & download & LST processing (Barsi atmospheric correction)
-  - Validation against reference data
+- `1_2_landsat_comparisonsmaps.py/` & `2_3_OL1EFR_comparisonmaps.py`
+The processed images are compared with reference images from 2024 in order to validate the processing workflow.
 
 ### (heat islands project)
-- `sentinel3/`
-  - STAC inventory & download
+- `3_1_heatislands_landsat_GEEdownload.py`
+STAC-based inventory and data download
 
-- `landsat/`
-  - STAC inventory & download  
+- `3_2_heatislands_sen3_download.py`
+STAC-based inventory and data download 
 
 ## Requirements
 
