@@ -25,6 +25,8 @@ File  :   [inputs]    [outputs]
 - 3_1_heatislands_landsat_GEEdownload.py : [Tessin_AOI.shp] [landsat_lst_ticino, landsat_lst_usgs_inventory.xlsx, landsat_lst_GEE_downloaded.xlsx]
 - 3_2_heatislands_sen3_download.py : [Tessin_AOI.shp] [sentinel3_lst_ticino, sentinel3_lst_copernicus_inventory.xlsx]
 
+All required input datasets are provided as a compressed archive (`inputs.zip`) located in the `inputs/` directory.
+Before running the scripts, the archive must be extracted so that the original directory structure is preserved.
 
 ## Structure (CIPAIS project)
 
